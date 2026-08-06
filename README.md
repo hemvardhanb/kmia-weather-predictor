@@ -1,6 +1,6 @@
 # KMIA Weather Predictor
 
-An accurate, year-round daily high temperature prediction model for Miami International Airport (KMIA).
+An accurate, year-round daily high temperature prediction model for Miami International Airport (KMIA). To help me bet on kalshi ;)
 
 ## Overview
 This project uses a `RandomForestRegressor` trained on historical ASOS/AWOS meteorological data. Unlike basic heuristic models, this system uses anomaly-based learning, which allows it to provide stable year-round predictions by modeling deviations from long-term climatological means.
