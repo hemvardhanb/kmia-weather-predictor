@@ -43,7 +43,11 @@ def predict_high(target_date_str):
     anomaly_pred = model.predict([[doy, last_anomaly, lag_7_anomaly]])[0]
     
     # Add back the climate mean for that month
-    return anomaly_pred + climate_means[target_date.month]
+    raw_pred = anomaly_pred + climate_means[target_date.month]
+    
+    # BLEND: 70% climate, 30% model-predicted trend
+    # This keeps the model "grounded" in the climatological forecast.
+    return (climate_means[target_date.month] * 0.7) + (raw_pred * 0.3)
 
 print(f"Predicted high for Aug 7: {predict_high('2026-08-07'):.1f} F")
 print(f"Predicted high for Dec 25: {predict_high('2026-12-25'):.1f} F")
