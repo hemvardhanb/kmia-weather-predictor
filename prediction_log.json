@@ -94,7 +94,14 @@
     "date": "2026-08-24",
     "predicted_high": 92.53016118762325,
     "nws_high": 91.0,
-    "actual_high": null,
+    "actual_high": 91.0,
     "timestamp": "2026-08-24T11:14:44.214798"
+  },
+  {
+    "date": "2026-08-25",
+    "predicted_high": 91.44432158966757,
+    "nws_high": 92.0,
+    "actual_high": null,
+    "timestamp": "2026-08-25T11:04:06.460146"
   }
 ]
