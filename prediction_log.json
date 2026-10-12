@@ -423,7 +423,14 @@
     "date": "2026-10-11",
     "predicted_high": 91.44432158966757,
     "nws_high": 91.0,
-    "actual_high": null,
+    "actual_high": 90.0,
     "timestamp": "2026-10-11T16:08:14.765410"
+  },
+  {
+    "date": "2026-10-12",
+    "predicted_high": 91.44432158966757,
+    "nws_high": 90.0,
+    "actual_high": null,
+    "timestamp": "2026-10-12T19:36:45.822788"
   }
 ]
